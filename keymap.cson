@@ -1,0 +1,21 @@
+'atom-text-editor:not([mini])':
+  'cmd-backspace': 'editor:delete-line'
+  'shift-alt-up': 'editor:move-line-up'
+  'shift-alt-down': 'editor:move-line-down'
+  'cmd-d': 'editor:duplicate-lines'
+  'shift-cmd-u': 'editor:upper-case'
+  'shift-cmd-l': 'editor:lower-case'
+  'cmd-l': 'unset!'
+  'ctrl-cmd-right': 'unset!'
+  'ctrl-cmd-left': 'unset!'
+
+'.platform-darwin atom-text-editor':
+  'ctrl-g': 'find-and-replace:select-next'
+  'shift-ctrl-g': 'find-and-replace:select-undo'
+
+'.platform-darwin, .platform-win32, .platform-linux':
+  'cmd-l': 'go-to-line:toggle'
+
+'body':
+  'ctrl-cmd-right': 'pane:split-right-and-move-active-item'
+  'ctrl-cmd-left': 'pane:split-left-and-move-active-item'
